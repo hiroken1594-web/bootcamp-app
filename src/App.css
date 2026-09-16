@@ -1,0 +1,137 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  min-height: 100vh;
+}
+
+.screen h1 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.catchphrase {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.ad-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  border: 1px solid #999;
+  color: #999;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+button {
+  background: #3d5a80;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 12px 16px 16px;
+}
+
+legend {
+  padding: 0 6px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.field-error {
+  color: #c1121f;
+  font-size: 0.8rem;
+  margin: 4px 0 0;
+}
+
+.notice {
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.notice-warn {
+  background: #fff3cd;
+  color: #7a5b00;
+}
+
+.notice-error {
+  background: #fde2e2;
+  color: #c1121f;
+}
+
+.comparison-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.positive {
+  color: #2b7a3b;
+  font-weight: 600;
+}
+
+.negative {
+  color: #c1121f;
+  font-weight: 600;
+}
+
+.exercise-chart {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #eef1f5;
+}

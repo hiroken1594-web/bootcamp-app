@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Profile {
+  id        Int              @id @default(autoincrement())
+  name      String           @unique
+  weight    Float
+  height    Float
+  age       Int
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+  records   ExerciseRecord[]
+}
+
+model ExerciseRecord {
+  id        Int      @id @default(autoincrement())
+  profileId Int
+  profile   Profile  @relation(fields: [profileId], references: [id])
+  type      String
+  minutes   Int
+  date      DateTime @default(now())
+  createdAt DateTime @default(now())
+
+  @@index([profileId])
+}

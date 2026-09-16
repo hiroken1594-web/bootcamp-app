@@ -1,0 +1,22 @@
+{
+  "name": "bootcamp-app",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Prisma.prisma",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g vercel prisma && if [ -f package.json ]; then npm install; fi",
+  "forwardPorts": [5173, 3000],
+  "portsAttributes": {
+    "5173": { "label": "Vite dev server" },
+    "3000": { "label": "Vercel dev (api/)" }
+  }
+}
